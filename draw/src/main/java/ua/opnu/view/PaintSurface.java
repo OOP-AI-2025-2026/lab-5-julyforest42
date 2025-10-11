@@ -161,6 +161,13 @@ public class PaintSurface extends JComponent {
         }
     }
 
+    public void clear() {
+        shapes.clear();
+        startDrag = null;
+        endDrag = null;
+        repaint();
+    }
+
     // Даний метод відображає фон поверхні (сітка)
     private void paintBackgroundGrid(Graphics2D g2) {
         // Сітка матиме сірий колір
